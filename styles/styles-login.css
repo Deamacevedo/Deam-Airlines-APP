@@ -1,0 +1,162 @@
+/* Reset y fuentes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../font/Raleway.ttf) format("truetype");
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Layout inicial */
+#inicio {
+    display: grid;
+    place-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 80%; /* Ocupa el 80% del ancho de su contenedor */
+    max-width: 250px; /* Límite máximo */
+    min-width: 150px; /* Límite mínimo (opcional) */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 50px auto 20px;
+}
+
+/* Contenido principal */
+main {
+    max-width: 400px;
+    margin: 0 auto 10px;
+    padding: 30px;
+}
+
+main h2 {
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+/* Formulario */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.boton {
+    display: block; /* Cambiado de inline-block a block */
+    width: 100%;
+    padding: 12px 10px; /* Ajuste de padding para igualar altura */
+    background-color: #004225;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    transition: background-color 0.3s; /* Para el efecto hover suave */
+}
+
+
+.boton:hover {
+    background-color: #176644;
+}
+
+/* Enlaces */
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    display: block;
+    color: #A9DFBF;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* Bloquear pantallas más grandes que móviles - Versión mejorada */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+        font-family: "Raleway", sans-serif;
+        color: #333;
+    }
+
+    body::before {
+        content: "";
+        display: block;
+        background-image: url('../icons/Logo\ para\ login.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: clamp(200px, 50vw, 500px);  /* Mínimo 200px, ideal 50vw, máximo 500px */
+        height: 0;
+        padding-top: min(40%, 400px);       /* Proporción 400/500 = 80% */
+        margin: 0 auto 30px;
+        overflow: hidden;
+    }
+
+    body::after {
+        content: "Esta aplicación está optimizada para dispositivos móviles. Por favor, accede desde tu smartphone o tablet.";
+        display: block;
+        max-width: 500px;
+        padding: 30px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #555;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    /* Oculta todo el contenido original */
+    body > *:not(::before):not(::after) {
+        display: none !important;
+    }
+
+    main {
+        display: none;
+    }
+    #inicio {
+        display: none;
+    }
+}
