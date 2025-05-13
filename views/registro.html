@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div></div>
+    </header>
+
+    <main>
+        <h2>Registro</h2>
+        
+        <form>
+            <div>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                <label for="identificacion"></label>
+                <input type="text" id="identificacion" placeholder="No. Identificación" required>
+            </div>
+
+            <div>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="E-mail" required>
+            </div>
+
+            <div>
+                <label for="telefono"></label>
+                <input type="tel" id="telefono" placeholder="Téléfono" required>
+            </div>
+
+            <div>
+                <label for="ciudad"></label>
+                <select name="ciudad" id="ciudad" required>
+                    <option value="" disabled selected>Seleccione una ciudad</option>
+                    <option value="new-york">Bogotá</option>
+                    <option value="new-york">Nueva York</option>
+                    <option value="london">Londres</option>
+                    <option value="tokyo">Tokio</option>
+                    <option value="paris">París</option>
+                    <option value="dubai">Dubái</option>
+                    <option value="singapore">Singapur</option>
+                    <option value="hong-kong">Hong Kong</option>
+                    <option value="sydney">Sídney</option>
+                    <option value="los-angeles">Los Ángeles</option>
+                    <option value="rome">Roma</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="moscow">Moscú</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="shanghai">Shanghái</option>
+                    <option value="istanbul">Estambul</option>
+                    <option value="beijing">Pekín</option>
+                    <option value="rio-de-janeiro">Río de Janeiro</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="mexico-city">Ciudad de México</option>
+                    <option value="berlin">Berlín</option>
+                </select>
+            </div>
+
+            <div>
+            <button type="submit">GUARDAR</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
