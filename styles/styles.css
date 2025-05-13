@@ -2,3 +2,116 @@
     margin: 0;
     padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bloquear pantallas más grandes que móviles - Versión mejorada */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+        font-family: "Raleway", sans-serif;
+        color: #333;
+    }
+
+    body::before {
+        content: "";
+        display: block;
+        background-image: url('../icons/Logo\ para\ login.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: clamp(200px, 50vw, 500px);  /* Mínimo 200px, ideal 50vw, máximo 500px */
+        height: 0;
+        padding-top: min(40%, 400px);       /* Proporción 400/500 = 80% */
+        margin: 0 auto 30px;
+        overflow: hidden;
+    }
+
+    body::after {
+        content: "Esta aplicación está optimizada para dispositivos móviles. Por favor, accede desde tu smartphone o tablet.";
+        display: block;
+        max-width: 500px;
+        padding: 30px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #555;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    /* Oculta todo el contenido original */
+    body > *:not(::before):not(::after) {
+        display: none !important;
+    }
+
+    main {
+        display: none;
+    }
+    #inicio {
+        display: none;
+    }
+}
