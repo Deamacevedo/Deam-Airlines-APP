@@ -1,72 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Bloquear pantallas más grandes que móviles - Versión mejorada */
-@media (min-width: 768px) {
-    body {
-=======
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
 /* Estilos generales */
 * {
     margin: 0;
@@ -591,10 +522,6 @@ input[type="password"] {
 /* Bloquear pantallas más grandes que móviles - Versión mejorada */
 @media (min-width: 768px) {
     .body-subclases {
-<<<<<<< HEAD
-=======
->>>>>>> 1f86b475e6bfcdce9029dbb7db17ec8cb7840714
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -602,12 +529,6 @@ input[type="password"] {
         min-height: 100vh;
         margin: 0;
         padding: 20px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        background-color: #f5f5f5;
-=======
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
         background: white;
         font-family: "Raleway", sans-serif;
         color: #333;
@@ -622,10 +543,6 @@ input[type="password"] {
         margin: 0;
         padding: 20px;
         background: white;
-<<<<<<< HEAD
-=======
->>>>>>> 1f86b475e6bfcdce9029dbb7db17ec8cb7840714
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
         font-family: "Raleway", sans-serif;
         color: #333;
     }
@@ -637,37 +554,17 @@ input[type="password"] {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        width: clamp(200px, 50vw, 500px);  /* Mínimo 200px, ideal 50vw, máximo 500px */
-        height: 0;
-        padding-top: min(40%, 400px);       /* Proporción 400/500 = 80% */
-=======
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
         width: clamp(200px, 50vw, 500px);
         /* Mínimo 200px, ideal 50vw, máximo 500px */
         height: 0;
         padding-top: min(40%, 400px);
         /* Proporción 400/500 = 80% */
-<<<<<<< HEAD
-=======
->>>>>>> 1f86b475e6bfcdce9029dbb7db17ec8cb7840714
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
         margin: 0 auto 30px;
         overflow: hidden;
     }
 
     body::after {
-<<<<<<< HEAD
         content: "Esta aplicación está optimizada para dispositivos móviles. Por favor, accede desde tu smartphone.";
-=======
-<<<<<<< HEAD
-        content: "Esta aplicación está optimizada para dispositivos móviles. Por favor, accede desde tu smartphone o tablet.";
-=======
-        content: "Esta aplicación está optimizada para dispositivos móviles. Por favor, accede desde tu smartphone.";
->>>>>>> 1f86b475e6bfcdce9029dbb7db17ec8cb7840714
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
         display: block;
         max-width: 500px;
         padding: 30px;
@@ -682,30 +579,13 @@ input[type="password"] {
     }
 
     /* Oculta todo el contenido original */
-<<<<<<< HEAD
     body>*:not(::before):not(::after) {
-=======
-<<<<<<< HEAD
-    body > *:not(::before):not(::after) {
-=======
-    body>*:not(::before):not(::after) {
->>>>>>> 1f86b475e6bfcdce9029dbb7db17ec8cb7840714
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
         display: none !important;
     }
 
     main {
         display: none;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    #inicio {
-        display: none;
-    }
-}
-=======
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
 
     #inicio {
         display: none;
@@ -716,126 +596,3 @@ input[type="password"] {
         max-width: 500px;
     }
 }
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Bloquear pantallas más grandes que móviles - Versión mejorada */
-@media (min-width: 768px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0;
-        padding: 20px;
-        background-color: #f5f5f5;
-        font-family: "Raleway", sans-serif;
-        color: #333;
-    }
-
-    body::before {
-        content: "";
-        display: block;
-        background-image: url('../icons/Logo\ para\ login.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: clamp(200px, 50vw, 500px);  /* Mínimo 200px, ideal 50vw, máximo 500px */
-        height: 0;
-        padding-top: min(40%, 400px);       /* Proporción 400/500 = 80% */
-        margin: 0 auto 30px;
-        overflow: hidden;
-    }
-
-    body::after {
-        content: "Esta aplicación está optimizada para dispositivos móviles. Por favor, accede desde tu smartphone o tablet.";
-        display: block;
-        max-width: 500px;
-        padding: 30px;
-        text-align: center;
-        font-size: 18px;
-        line-height: 1.5;
-        color: #555;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        margin-top: 20px;
-    }
-
-    /* Oculta todo el contenido original */
-    body > *:not(::before):not(::after) {
-        display: none !important;
-    }
-
-    main {
-        display: none;
-    }
-    #inicio {
-        display: none;
-    }
-}
-=======
-
-
->>>>>>> 1f86b475e6bfcdce9029dbb7db17ec8cb7840714
->>>>>>> d6191174c97af68915973ed8c99cb7a1c5b9ad5d
