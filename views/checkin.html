@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Check in</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body>
-    <header>
-        <div></div>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body class="body-subclases">
+    <header class="header">
+      <img
+        src="../icons/logo verde blanco horizontal.svg"
+        alt="Logo DEAM"
+        class="logo"
+      />
     </header>
 
-    <main>
-        <section>
-            <div>
-                <h2>John Doe</h2>
-                <a href="#">Cerrar Sesión</a>
-            </div>
-            
-            <h3>Check In</h3>
-            
-            <div class="vuelo-info">
-                <p>05:30 - 06:30</p>
-                <p>1h 30 min</p>
-                <p>Bogotá - Barranquilla</p>
-            </div>
-            
-            <div class="codigo-vuelo">
-                <p>VAA025</p>
-            </div>
-            
-            <h4>Contacto En Caso De Emergencia</h4>
-            
-            <form>
-                <div class="form-group">
-                    <label for="nombre-emergencia"></label>
-                    <input type="text" id="nombre-emergencia" placeholder="Nombre completo" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="telefono-emergencia"></label>
-                    <input type="tel" id="telefono-emergencia" placeholder="No. Teléfono Celular" required>
-                </div>
-                
-                <button type="submit">GUARDAR</button>
-            </form>
-        </section>
+    <main class="form-contenedor2">
+      <section>
+        <div class="perfil">
+          <img src="../icons/perfil.svg" alt="Perfil" class="avatar" />
+          <div class="info">
+            <h2>Dylan Acevedo</h2>
+            <a href="../index.html" class="cerrar-sesion2">Cerrar Sesión</a>
+          </div>
+        </div>
+        <div class="linea-titulo"></div>
+
+        <h3>Check In</h3>
+
+        <div class="tarjeta-checkin">
+          <img
+            src="../icons/AvionVolando.svg"
+            alt="Avión"
+            class="icono-avion"
+          />
+          <div class="info-vuelo">
+            <span class="hora">05:30 - 06:30</span>
+            <span class="duracion">1h 30 min</span>
+            <span class="trayecto">Bogotá - Barranquilla</span>
+          </div>
+          <div class="referencia-vuelo">VAA025</div>
+        </div>
+
+        <form action="../views/menu.html" method="get" class="formulario-emergencia">
+          <h3>Contacto En Caso De Emergencia</h3>
+          <label for="nombre-completo"></label>
+          <input type="text" id="nombre-completo" name="nombre-completo" placeholder="Nombre completo" required />
+          
+          <label for="telefono-celular"></label>
+          <input type="tel" id="telefono-celular" name="telefono-celular" placeholder="No. Teléfono Celular" required />
+          
+          <button type="submit" class="boton-principal">GUARDAR</button>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>
