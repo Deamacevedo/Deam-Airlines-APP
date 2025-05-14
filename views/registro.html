@@ -6,33 +6,37 @@
     <title>Registro</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
-    <header>
-        <div></div>
+<body class="body-subclases">
+
+    <header class="header">
+        <img src="../icons/logo verde blanco horizontal.svg" alt="Logo DEAM" class="logo">
     </header>
 
-    <main>
+    <main class="form-contenedor">
         <h2>Registro</h2>
+        <div class="linea-titulo"></div> 
         
         <form>
-            <div>
+            <div class="casilla-relleno">
                 <label for="nombre"></label>
                 <input type="text" id="nombre" placeholder="Nombre Completo" required>
+            </div>   
+            <div class="casilla-relleno">
                 <label for="identificacion"></label>
                 <input type="text" id="identificacion" placeholder="No. Identificación" required>
-            </div>
+            </div> 
 
-            <div>
+            <div class="casilla-relleno">
                 <label for="email"></label>
                 <input type="email" id="email" placeholder="E-mail" required>
             </div>
 
-            <div>
+            <div class="casilla-relleno">
                 <label for="telefono"></label>
                 <input type="tel" id="telefono" placeholder="Téléfono" required>
             </div>
 
-            <div>
+            <div class="casilla-relleno">
                 <label for="ciudad"></label>
                 <select name="ciudad" id="ciudad" required>
                     <option value="" disabled selected>Seleccione una ciudad</option>
@@ -61,7 +65,7 @@
             </div>
 
             <div>
-            <button type="submit">GUARDAR</button>
+            <button type="submit" class="boton">GUARDAR</button>
             </div>
         </form>
 
